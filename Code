@@ -1,0 +1,1106 @@
+#homepage
+
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgriConnect - Modern Agriculture Marketplace</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#a5d0b9",
+                        "on-primary-container": "#86af99",
+                        "on-secondary-container": "#367200",
+                        "secondary": "#326b00",
+                        "on-secondary-fixed-variant": "#245100",
+                        "on-primary-fixed": "#002114",
+                        "on-primary-fixed-variant": "#274e3d",
+                        "primary-fixed-dim": "#a5d0b9",
+                        "surface-container": "#ececff",
+                        "tertiary-container": "#003f63",
+                        "surface-tint": "#3f6653",
+                        "outline": "#717973",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#70e000",
+                        "inverse-on-surface": "#f0efff",
+                        "on-background": "#161a32",
+                        "on-tertiary-fixed-variant": "#004b74",
+                        "surface-dim": "#d5d8f9",
+                        "primary-fixed": "#c1ecd4",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#414844",
+                        "error": "#ba1a1a",
+                        "tertiary": "#002842",
+                        "on-tertiary-fixed": "#001d32",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fbf8ff",
+                        "surface-container-highest": "#dee0ff",
+                        "primary": "#012d1d",
+                        "surface-container-high": "#e5e6ff",
+                        "primary-container": "#1b4332",
+                        "on-surface": "#161a32",
+                        "tertiary-fixed": "#cde5ff",
+                        "inverse-surface": "#2b2f48",
+                        "tertiary-fixed-dim": "#94ccff",
+                        "secondary-fixed": "#8bfe32",
+                        "on-tertiary-container": "#59adef",
+                        "on-primary": "#ffffff",
+                        "surface": "#fbf8ff",
+                        "background": "#fbf8ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c1c8c2",
+                        "surface-variant": "#dee0ff",
+                        "surface-container-low": "#f4f2ff",
+                        "secondary-container": "#8bfe32",
+                        "on-secondary-fixed": "#0b2000",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "container-max": "1280px",
+                        "sm": "12px",
+                        "lg": "48px",
+                        "margin-mobile": "16px",
+                        "xs": "4px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-sm": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Montserrat"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(251, 248, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary">
+<nav class="bg-surface dark:bg-surface-container-high border-b border-outline-variant dark:border-outline shadow-sm sticky top-0 z-50 w-full transition-all duration-300">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-xl py-sm max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary hover:opacity-80 transition-opacity" href="#">AgriConnect</a>
+<div class="hidden md:flex items-center gap-md">
+<a class="text-primary dark:text-secondary-fixed border-b-2 border-primary dark:border-secondary-fixed pb-1 font-label-md text-label-md transition-all" href="#">Marketplace</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-md text-label-md" href="#">Logistics</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-md text-label-md" href="#">Forecasts</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors font-label-md text-label-md" href="#">Profile</a>
+</div>
+<div class="flex items-center gap-sm">
+<button aria-label="Notifications" class="p-xs text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container rounded-full">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button aria-label="Shopping Cart" class="p-xs text-on-surface-variant hover:text-primary transition-colors hover:bg-surface-container rounded-full">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<div class="w-8 h-8 rounded-full overflow-hidden border-2 border-surface-container cursor-pointer hover:border-primary transition-colors ml-xs">
+<img alt="Farmer profile avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTb9ATxnzHcJhDlnqYwN64AznqyeygvYpeKIwVAZvUwZX_2vu3F7BhF1-JwEhFIPi6b7pMrf3AXs-dIc2vc6BxnetA2ozHTSBVWHsFSBkYD8t1mbbYVkdUiVLsBF57NalFwVD0EDxQI7nRI8XEwLGUrlu5iYNPLLz3dvW0Z8r4zQ1nqiIjQygQUS1SocCJkrZOib2NhFNJuj_Ua-F_LJCYTesOvjEaERQKgSVnbcpQPmcEQoSyoojcaw"/>
+</div>
+</div>
+</div>
+</nav>
+<main class="flex-grow flex flex-col">
+<section class="relative w-full min-h-[870px] flex items-center pt-md pb-xl overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full object-cover" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3zndlIE-8Y2z0xF6OG-b843zwcTG9VbES1RpkyKOOCXtLHuhC7LImYFZrr3wEklLihkl8_CrAYBjeUGlq27hzFyUHYIscQSIYqqp8qlXDlOGZGQ6ZwZT7zVb9uVy37vB55-sz7DK80AsH_1rnrjTKLkibcrNTTGKv7UuB9T8I9Hgawh9Wchlr1teMWn08JzYHHCH4VEF6SXmxTpgZHyIrmI_e-Vykmnxe2k7ndkDJCnbaAUDm1eMLOA')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-xl grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="col-span-1 lg:col-span-6 flex flex-col gap-md text-white">
+<div class="inline-flex items-center gap-xs px-sm py-xs bg-secondary/30 border border-secondary/50 rounded-full backdrop-blur-md w-fit text-secondary-fixed">
+<span class="material-symbols-outlined text-sm">eco</span>
+<span class="font-label-sm text-label-sm">Empowering Sustainable Agriculture</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-primary">
+                        The Intelligent<br/>Marketplace for<br/>Modern Farming
+                    </h1>
+<p class="font-body-lg text-body-lg text-inverse-on-surface max-w-lg opacity-90">
+                        Connect directly with premium buyers, leverage AI-driven yield forecasts, and optimize your logistics network—all from one secure platform.
+                    </p>
+<div class="flex flex-wrap gap-sm pt-xs">
+<button class="bg-secondary text-on-secondary px-lg py-sm rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm flex items-center gap-xs">
+                            Join the Marketplace
+                            <span class="material-symbols-outlined text-base">arrow_forward</span>
+</button>
+<button class="bg-white/10 backdrop-blur-md border border-white/20 text-white px-lg py-sm rounded-lg font-label-md text-label-md hover:bg-white/20 transition-colors">
+                            Explore Data
+                        </button>
+</div>
+</div>
+<div class="col-span-1 lg:col-span-6 hidden md:grid grid-cols-2 gap-sm h-full">
+<div class="glass-panel p-md rounded-xl flex flex-col justify-between shadow-lg border-surface-variant transform hover:-translate-y-1 transition-transform duration-300">
+<div class="flex justify-between items-start">
+<div class="p-xs bg-primary-container text-secondary-fixed rounded-lg">
+<span class="material-symbols-outlined">monitoring</span>
+</div>
+<span class="text-secondary font-label-sm text-label-sm flex items-center gap-[2px]">+14.2% <span class="material-symbols-outlined text-[14px]">trending_up</span></span>
+</div>
+<div class="mt-lg">
+<h3 class="font-headline-sm text-headline-sm text-primary">Market Yield</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-xs">AI Forecast Accuracy</p>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden shadow-lg border border-outline-variant/30 row-span-2">
+<img alt="Fresh Produce" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD59imrLMlq14TkygqsfoEcFLFMFbtYDofxoKKJhIHdcYh0PSOC6JDViPxVsIqfzou3iHxB3GmVn2wcEaiVQ0ZmZoybuWovT8IR73KGxhkwDFPuJq27jcTVQXvR64_5WzxhmwkYG9AtDdsiqvUPyZ5ELAgAI7lElrrYKU86JY2EL-q3DqiUGVrJoLeNkD9ezkXlSdl3tb7fnxnQ8oNTn_KULMryptaJqHaXPdda6Pp8XanNH32umYvYbw"/>
+</div>
+<div class="glass-panel p-md rounded-xl flex flex-col justify-between shadow-lg border-surface-variant transform hover:-translate-y-1 transition-transform duration-300">
+<div class="p-xs bg-tertiary-container text-tertiary-fixed rounded-lg w-fit">
+<span class="material-symbols-outlined">local_shipping</span>
+</div>
+<div class="mt-lg">
+<h3 class="font-headline-sm text-headline-sm text-primary">24h Transit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-xs">Smart Logistics Route</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-xl bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-xl">
+<div class="text-center max-w-2xl mx-auto mb-lg">
+<h2 class="font-headline-md text-headline-md text-primary mb-sm">Cultivating Smarter Connections</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Our platform bridges the gap between the field and the market with technology designed specifically for agricultural scale.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface border border-outline-variant rounded-xl p-md shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-secondary-fixed mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">handshake</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-xs">Direct Connection</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow">Bypass intermediaries. Negotiate transparently with verified bulk buyers and local distributors to secure better margins for your harvest.</p>
+</div>
+<div class="bg-surface border border-outline-variant rounded-xl p-md shadow-sm hover:shadow-md transition-shadow group flex flex-col relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-32 h-32 bg-surface-container-high rounded-full opacity-50 z-0"></div>
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center text-tertiary-fixed mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">insights</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-xs">AI Forecasting</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow">Utilize predictive models based on historical weather, soil data, and market trends to plan your crop cycles with unprecedented accuracy.</p>
+</div>
+</div>
+<div class="bg-surface border border-outline-variant rounded-xl p-md shadow-sm hover:shadow-md transition-shadow group flex flex-col">
+<div class="w-12 h-12 rounded-full bg-surface-tint flex items-center justify-center text-inverse-on-surface mb-md group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">route</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-xs">Smart Logistics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-grow">Automate transport bookings. Track shipments in real-time with temperature monitoring to ensure produce arrives fresh and compliant.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container w-full py-lg px-margin-mobile md:px-xl flex flex-col md:flex-row justify-between items-center gap-md font-body-sm text-body-sm mt-auto border-t-0 shadow-none">
+<div class="flex flex-col items-center md:items-start gap-xs">
+<span class="font-headline-sm text-headline-sm text-on-primary font-bold">AgriConnect</span>
+<span class="opacity-80">© 2024 AgriConnect. Empowering sustainable agriculture.</span>
+</div>
+<div class="flex flex-wrap justify-center md:justify-end gap-x-md gap-y-sm">
+<a class="text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-colors cursor-pointer" href="#">About Us</a>
+<a class="text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-colors cursor-pointer" href="#">Farmer Resources</a>
+<a class="text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-colors cursor-pointer" href="#">Market Insight</a>
+<a class="text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-colors cursor-pointer" href="#">Support Center</a>
+<a class="text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed transition-colors cursor-pointer" href="#">Contact</a>
+</div>
+</footer>
+</body>
+</html>
+
+#marketplace
+
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgriConnect Marketplace</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#a5d0b9",
+                        "on-primary-container": "#86af99",
+                        "on-secondary-container": "#367200",
+                        "secondary": "#326b00",
+                        "on-secondary-fixed-variant": "#245100",
+                        "on-primary-fixed": "#002114",
+                        "on-primary-fixed-variant": "#274e3d",
+                        "primary-fixed-dim": "#a5d0b9",
+                        "surface-container": "#ececff",
+                        "tertiary-container": "#003f63",
+                        "surface-tint": "#3f6653",
+                        "outline": "#717973",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#70e000",
+                        "inverse-on-surface": "#f0efff",
+                        "on-background": "#161a32",
+                        "on-tertiary-fixed-variant": "#004b74",
+                        "surface-dim": "#d5d8f9",
+                        "primary-fixed": "#c1ecd4",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#414844",
+                        "error": "#ba1a1a",
+                        "tertiary": "#002842",
+                        "on-tertiary-fixed": "#001d32",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fbf8ff",
+                        "surface-container-highest": "#dee0ff",
+                        "primary": "#012d1d",
+                        "surface-container-high": "#e5e6ff",
+                        "primary-container": "#1b4332",
+                        "on-surface": "#161a32",
+                        "tertiary-fixed": "#cde5ff",
+                        "inverse-surface": "#2b2f48",
+                        "tertiary-fixed-dim": "#94ccff",
+                        "secondary-fixed": "#8bfe32",
+                        "on-tertiary-container": "#59adef",
+                        "on-primary": "#ffffff",
+                        "surface": "#fbf8ff",
+                        "background": "#fbf8ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c1c8c2",
+                        "surface-variant": "#dee0ff",
+                        "surface-container-low": "#f4f2ff",
+                        "secondary-container": "#8bfe32",
+                        "on-secondary-fixed": "#0b2000",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "md": "24px",
+                        "container-max": "1280px",
+                        "sm": "12px",
+                        "lg": "48px",
+                        "margin-mobile": "16px",
+                        "xs": "4px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "label-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-sm": ["Montserrat"],
+                        "headline-lg-mobile": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "headline-md": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .custom-shadow-base {
+            box-shadow: 0px 4px 12px rgba(27, 67, 50, 0.08);
+        }
+        .custom-shadow-hover:hover {
+            box-shadow: 0px 12px 32px rgba(27, 67, 50, 0.12);
+        }
+    </style>
+</head>
+<body class="bg-[#F8F9FA] text-on-surface font-body-md min-h-screen flex flex-col">
+<header class="bg-surface dark:bg-surface-container-high border-b border-outline-variant dark:border-outline shadow-sm sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-xl py-sm max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary">AgriConnect</span>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="font-body-md text-body-md text-primary dark:text-secondary-fixed border-b-2 border-primary dark:border-secondary-fixed pb-1 hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Marketplace</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Logistics</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Forecasts</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Profile</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<img alt="Farmer profile avatar" class="w-8 h-8 rounded-full border border-outline-variant object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHEZOOSJRVxykC9OFO6H0kE90Udy0_0dkPBlVErCN2YaM_Nod_0Pt8VnaMBMEfznYtQTX4Z7MgXYn4oO6NCxRgs9mzaACS-3CD29JVxqeCmTM5ucerCiWFcUQ1u3DD1WZwi7DcrmubmSvJWlXeKzWLLjW4VdL-xSBUnLTU7XRSV-0eINpbqpRweD1FMvfd8Poy0jSIIdDA_BY-hQEfHkMRF3G10vREw88zWHA3qQQQ7z3Bxd-uUoJYkw"/>
+</div>
+</div>
+</header>
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter py-md flex flex-col md:flex-row gap-gutter">
+<aside class="w-full md:w-64 flex-shrink-0">
+<div class="bg-surface border border-[#E9ECEF] rounded-lg p-4 custom-shadow-base sticky top-24">
+<h3 class="font-headline-sm text-headline-sm mb-4">Filters</h3>
+<div class="space-y-6">
+<div>
+<h4 class="font-label-md text-label-md text-on-surface-variant mb-2">Produce Type</h4>
+<div class="space-y-2">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded border-outline text-secondary focus:ring-secondary form-checkbox" type="checkbox"/>
+<span class="font-body-sm text-body-sm">Vegetables</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded border-outline text-secondary focus:ring-secondary form-checkbox" type="checkbox"/>
+<span class="font-body-sm text-body-sm">Fruits</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded border-outline text-secondary focus:ring-secondary form-checkbox" type="checkbox"/>
+<span class="font-body-sm text-body-sm">Grains</span>
+</label>
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface-variant mb-2">Certification</h4>
+<div class="space-y-2">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded border-outline text-secondary focus:ring-secondary form-checkbox" type="checkbox"/>
+<span class="font-body-sm text-body-sm">Organic</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded border-outline text-secondary focus:ring-secondary form-checkbox" type="checkbox"/>
+<span class="font-body-sm text-body-sm">Fair Trade</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<div class="flex-grow">
+<div class="bg-surface border border-[#E9ECEF] rounded-lg p-6 mb-gutter custom-shadow-base flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md mb-2">Demand Heatmap</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Trending in your region: <span class="font-semibold text-secondary">Tomatoes, Wheat</span></p>
+</div>
+<div class="w-32 h-16 bg-surface-container rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary-container">trending_up</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="bg-surface border border-[#E9ECEF] rounded-lg overflow-hidden custom-shadow-base custom-shadow-hover transition-shadow duration-300 flex flex-col">
+<img alt="Tomatoes" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFvgiLMA5gxYZAxQbSl_AlS2_ap0bRcAaDZ6JoTFH1GHlm7OtD7r7aDHAHNIsayE9RdgaFvPI37KYcXfp_tooQwxBJw5KU1GYTJ9DD3g170iPtQpc3AQ_ikwao47-LM4BpWn44n54O0EUo1XmeSAy-dcV94J78IyXHTRC_ynsIv8YXMo75QvYABVEXdB7PEcrKMiQuGkeaCMIGkUe01V_G8uGIcpNwPzLQIFIWSht48w_tPa-CMrJKPw"/>
+<div class="p-4 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Organic Tomatoes</h3>
+<span class="bg-primary-fixed text-on-primary-fixed px-2 py-1 rounded text-label-sm font-label-sm">Organic</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Farm Fresh Co. <span class="material-symbols-outlined text-secondary text-sm align-middle">verified</span></p>
+<div class="mt-auto pt-4 border-t border-outline-variant flex justify-between items-center">
+<div>
+<span class="font-headline-sm text-headline-sm text-secondary">$2.50</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ kg</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">500kg avail.</span>
+</div>
+</div>
+</div>
+<div class="bg-surface border border-[#E9ECEF] rounded-lg overflow-hidden custom-shadow-base custom-shadow-hover transition-shadow duration-300 flex flex-col">
+<img alt="Wheat" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGcYwn6ZXbw1wZ1ORyNIUimCInaRObHRfA4bMZ6evXZBesyWHb9exGju7bMZdUJkeBLumQJ1SDofQlbjyCC7FukOFscipc3AlijE-Kjj9aXy-2ChU7kYm6PI6INxqczx_B5Cn1P7yfHkIxR7UfbHyp4Z1w7HmeXfFjn7BhAiTfNjG3sK5dRHGBW_C_IRWqRlp8hPU1IQXH6iqRgtDXa-ApYUwK3R6sTKZ5tQGj3MvURBTn0mXgcFDp-g"/>
+<div class="p-4 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Winter Wheat</h3>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-1 rounded text-label-sm font-label-sm">Bulk</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Valley Grain Farms <span class="material-symbols-outlined text-secondary text-sm align-middle">verified</span></p>
+<div class="mt-auto pt-4 border-t border-outline-variant flex justify-between items-center">
+<div>
+<span class="font-headline-sm text-headline-sm text-secondary">$0.80</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ kg</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2000kg avail.</span>
+</div>
+</div>
+</div>
+<div class="bg-surface border border-[#E9ECEF] rounded-lg overflow-hidden custom-shadow-base custom-shadow-hover transition-shadow duration-300 flex flex-col">
+<img alt="Apples" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsfpeyhbhLY_df85DspP_loRQWI8mZrMFJf7o2QENc93qIjHN2t1wdtYoWOsVjDjUXTw5kj3DWX-7cahnp6cAQHmVPblyMXSzhhkdlOFjYgLAG0gLnfeJ4J4W01nw8LNkc9_I2FUvOpLi7KZd2lTSBdxcYb3TWjIH2OAdy_LC8JeZtDIA_CUD0AZ5RK4gGvnYOfCPkHyGv8q9kxVU5xaEi3HIal4AZk8WFUFahOVGYxs40THo5DtG_0w"/>
+<div class="p-4 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-primary">Granny Smith Apples</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Orchard Prime <span class="material-symbols-outlined text-secondary text-sm align-middle">verified</span></p>
+<div class="mt-auto pt-4 border-t border-outline-variant flex justify-between items-center">
+<div>
+<span class="font-headline-sm text-headline-sm text-secondary">$1.20</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ kg</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">800kg avail.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-primary dark:bg-primary-container w-full py-lg px-margin-mobile md:px-xl flex flex-col md:flex-row justify-between items-center gap-md mt-auto">
+<div class="flex items-center">
+<span class="font-headline-sm text-headline-sm text-on-primary">AgriConnect</span>
+</div>
+<nav class="flex flex-wrap justify-center gap-4">
+<a class="font-body-sm text-body-sm text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer" href="#">About Us</a>
+<a class="font-body-sm text-body-sm text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer" href="#">Farmer Resources</a>
+<a class="font-body-sm text-body-sm text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer" href="#">Market Insight</a>
+<a class="font-body-sm text-body-sm text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer" href="#">Support Center</a>
+<a class="font-body-sm text-body-sm text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer" href="#">Contact</a>
+</nav>
+<div class="text-center md:text-right font-body-sm text-body-sm text-on-primary opacity-80">
+            © 2024 AgriConnect. Empowering sustainable agriculture.
+        </div>
+</footer>
+</body>
+</html>
+
+#farmerdashboard
+
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgriConnect - AI Dashboard &amp; Forecasts</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-primary": "#a5d0b9",
+                    "on-primary-container": "#86af99",
+                    "on-secondary-container": "#367200",
+                    "secondary": "#326b00",
+                    "on-secondary-fixed-variant": "#245100",
+                    "on-primary-fixed": "#002114",
+                    "on-primary-fixed-variant": "#274e3d",
+                    "primary-fixed-dim": "#a5d0b9",
+                    "surface-container": "#ececff",
+                    "tertiary-container": "#003f63",
+                    "surface-tint": "#3f6653",
+                    "outline": "#717973",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed-dim": "#70e000",
+                    "inverse-on-surface": "#f0efff",
+                    "on-background": "#161a32",
+                    "on-tertiary-fixed-variant": "#004b74",
+                    "surface-dim": "#d5d8f9",
+                    "primary-fixed": "#c1ecd4",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#414844",
+                    "error": "#ba1a1a",
+                    "tertiary": "#002842",
+                    "on-tertiary-fixed": "#001d32",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#fbf8ff",
+                    "surface-container-highest": "#dee0ff",
+                    "primary": "#012d1d",
+                    "surface-container-high": "#e5e6ff",
+                    "primary-container": "#1b4332",
+                    "on-surface": "#161a32",
+                    "tertiary-fixed": "#cde5ff",
+                    "inverse-surface": "#2b2f48",
+                    "tertiary-fixed-dim": "#94ccff",
+                    "secondary-fixed": "#8bfe32",
+                    "on-tertiary-container": "#59adef",
+                    "on-primary": "#ffffff",
+                    "surface": "#fbf8ff",
+                    "background": "#fbf8ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "outline-variant": "#c1c8c2",
+                    "surface-variant": "#dee0ff",
+                    "surface-container-low": "#f4f2ff",
+                    "secondary-container": "#8bfe32",
+                    "on-secondary-fixed": "#0b2000",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "md": "24px",
+                    "container-max": "1280px",
+                    "sm": "12px",
+                    "lg": "48px",
+                    "margin-mobile": "16px",
+                    "xs": "4px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "xl": "80px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "body-sm": ["Inter"],
+                    "headline-sm": ["Montserrat"],
+                    "headline-lg-mobile": ["Montserrat"],
+                    "headline-lg": ["Montserrat"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-md": ["Montserrat"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { background-color: #F8F9FA; }
+        .stat-card {
+            background: white;
+            border: 1px solid #E9ECEF;
+            transition: all 0.2s ease-in-out;
+        }
+        .stat-card:hover {
+            box-shadow: 0px 4px 12px rgba(27, 67, 50, 0.08);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-surface antialiased flex flex-col min-h-screen">
+<header class="bg-surface dark:bg-surface-container-high border-b border-outline-variant dark:border-outline shadow-sm font-body-md text-body-md docked full-width top-0 z-50 sticky">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-xl py-sm max-w-container-max mx-auto">
+<div class="flex items-center gap-sm">
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary tracking-tight" href="#">AgriConnect</a>
+</div>
+<nav class="hidden md:flex items-center gap-md">
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Marketplace</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Logistics</a>
+<a class="text-primary dark:text-secondary-fixed border-b-2 border-primary dark:border-secondary-fixed pb-1 active:opacity-80 active:scale-95 transition-all" href="#">Forecasts</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Profile</a>
+</nav>
+<div class="flex items-center gap-sm">
+<button aria-label="notifications" class="p-2 text-primary dark:text-primary-fixed-dim hover:text-primary dark:hover:text-secondary-fixed transition-colors rounded-full hover:bg-surface-container-low">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button aria-label="shopping_cart" class="p-2 text-primary dark:text-primary-fixed-dim hover:text-primary dark:hover:text-secondary-fixed transition-colors rounded-full hover:bg-surface-container-low">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant">
+<img alt="Farmer profile avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApRhP-40h1ph-Xjd-fEb7cQPvjGnz-TAmq8cM_ubFSzp6tkhg5ELrE430sEOdXvJKDwClOTIOPrmRAeYFsq8Ywd0llBTxHAq-ZnaLqhf4Vc-5XfhqeB5QkWwM1_njBVSXPUPPh3NHxrCUudIIrqYWpArGZr3po8gyVGVx9OFNkSvJy_xtoA5qfMRESBUrlQaDs25TZyRlEtx9_lBbh32BDPk_XW0-FTmr0wJVvf6fOQ1b0bQ9Jj74iAA"/>
+</div>
+<button class="md:hidden p-2 text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter py-md space-y-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-sm mb-lg">
+<div>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">AI Dashboard &amp; Forecasts</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2">Data-driven insights to optimize your yield and logistics.</p>
+</div>
+<div class="flex gap-sm">
+<button class="flex items-center gap-xs px-4 py-2 border border-secondary text-secondary rounded-DEFAULT font-label-md text-label-md hover:bg-surface-container-lowest transition-colors bg-white">
+<span class="material-symbols-outlined text-[18px]">download</span> Export Report
+                </button>
+<button class="flex items-center gap-xs px-4 py-2 bg-primary text-on-primary rounded-DEFAULT font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span> New Listing
+                </button>
+</div>
+</div>
+<section class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="stat-card p-md rounded-lg flex flex-col justify-between">
+<div class="flex justify-between items-start mb-4">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Sales (YTD)</p>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-1">$124,500</h2>
+</div>
+<div class="p-2 bg-surface-container-low rounded-full text-secondary">
+<span class="material-symbols-outlined">payments</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+12.5% vs last year</span>
+</div>
+</div>
+<div class="stat-card p-md rounded-lg flex flex-col justify-between">
+<div class="flex justify-between items-start mb-4">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Shipments</p>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-1">18</h2>
+</div>
+<div class="p-2 bg-tertiary-fixed rounded-full text-tertiary">
+<span class="material-symbols-outlined">local_shipping</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2 mt-2">
+<div class="bg-tertiary-container h-2 rounded-full" style="width: 75%"></div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-2">14 In Transit, 4 Processing</p>
+</div>
+<div class="stat-card p-md rounded-lg flex flex-col justify-between relative overflow-hidden bg-gradient-to-br from-surface to-primary-fixed opacity-90 border-primary-fixed-dim">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-[100px]">psychology</span>
+</div>
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-4">
+<div>
+<p class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span> AI Sales Pred. (Next Mo.)
+                            </p>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-1">$32,100</h2>
+</div>
+</div>
+<div class="flex items-center gap-2 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">insights</span>
+<span>High confidence (89%) based on market trends</span>
+</div>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-md">
+<div class="lg:col-span-2 stat-card rounded-lg p-md">
+<div class="flex justify-between items-center mb-6">
+<h3 class="font-headline-sm text-headline-sm text-primary">Demand Forecast</h3>
+<select class="border border-outline-variant rounded-DEFAULT font-label-md text-label-md px-3 py-1 bg-white focus:border-secondary focus:ring-1 focus:ring-secondary outline-none">
+<option>All Crops</option>
+<option>Corn</option>
+<option>Soybeans</option>
+<option>Wheat</option>
+</select>
+</div>
+<div class="w-full h-[300px] relative border-b border-l border-outline-variant flex items-end pt-4 pb-2 pr-2">
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none pb-2 opacity-10">
+<div class="w-full border-t border-on-surface"></div>
+<div class="w-full border-t border-on-surface"></div>
+<div class="w-full border-t border-on-surface"></div>
+<div class="w-full border-t border-on-surface"></div>
+</div>
+<div class="w-full flex justify-around items-end h-full relative z-10 px-4">
+<div class="w-1/12 bg-tertiary-container rounded-t-sm h-[40%] relative group cursor-pointer">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-surface shadow-sm border border-outline-variant px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Jan: 40k</div>
+</div>
+<div class="w-1/12 bg-tertiary-container rounded-t-sm h-[50%] relative group cursor-pointer"></div>
+<div class="w-1/12 bg-tertiary-container rounded-t-sm h-[45%] relative group cursor-pointer"></div>
+<div class="w-1/12 bg-primary rounded-t-sm h-[60%] relative group cursor-pointer"></div>
+<div class="w-1/12 bg-secondary opacity-60 rounded-t-sm h-[75%] border-t-2 border-secondary border-dashed relative group cursor-pointer">
+<div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-surface shadow-sm border border-outline-variant px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-secondary font-medium">May: 75k (Pred)</div>
+</div>
+<div class="w-1/12 bg-secondary opacity-60 rounded-t-sm h-[85%] border-t-2 border-secondary border-dashed relative group cursor-pointer"></div>
+<div class="w-1/12 bg-secondary opacity-60 rounded-t-sm h-[95%] border-t-2 border-secondary border-dashed relative group cursor-pointer"></div>
+</div>
+</div>
+<div class="flex justify-around w-full mt-2 font-label-sm text-label-sm text-on-surface-variant">
+<span>Jan</span>
+<span>Feb</span>
+<span>Mar</span>
+<span class="font-bold text-primary">Apr</span>
+<span class="text-secondary">May</span>
+<span class="text-secondary">Jun</span>
+<span class="text-secondary">Jul</span>
+</div>
+<div class="flex justify-center gap-4 mt-6 font-label-sm text-label-sm">
+<div class="flex items-center gap-1"><span class="w-3 h-3 bg-tertiary-container rounded-full"></span> Historical</div>
+<div class="flex items-center gap-1"><span class="w-3 h-3 bg-primary rounded-full"></span> Current</div>
+<div class="flex items-center gap-1"><span class="w-3 h-3 bg-secondary opacity-60 border border-secondary border-dashed rounded-full"></span> Predicted</div>
+</div>
+</div>
+<div class="lg:col-span-1 stat-card rounded-lg p-md flex flex-col bg-surface-bright border-l-4 border-l-secondary">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-secondary text-[24px]">lightbulb</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">AI Actionable Insights</h3>
+</div>
+<div class="space-y-4 flex-grow overflow-y-auto pr-2">
+<div class="bg-white p-3 rounded border border-outline-variant hover:shadow-sm transition-shadow">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-label-md text-label-md text-primary">Crop Recommendation</h4>
+<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] px-2 py-0.5 rounded-full font-bold">HIGH PRIORITY</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Planting more <strong class="text-primary">Corn</strong> is recommended based on a predicted regional shortage in Q3.</p>
+<button class="text-secondary font-label-sm text-label-sm hover:underline flex items-center gap-1">View Market Data <span class="material-symbols-outlined text-[14px]">arrow_forward</span></button>
+</div>
+<div class="bg-white p-3 rounded border border-outline-variant hover:shadow-sm transition-shadow">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-label-md text-label-md text-primary">Logistics Alert</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Freight costs are expected to drop by 4% next week. Consider delaying non-urgent bulk shipments.</p>
+<button class="text-secondary font-label-sm text-label-sm hover:underline flex items-center gap-1">Adjust Schedule <span class="material-symbols-outlined text-[14px]">arrow_forward</span></button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-primary dark:bg-primary-container text-on-primary dark:text-on-primary-container font-body-sm text-body-sm full-width bottom-0 mt-auto flat no shadows">
+<div class="w-full py-lg px-margin-mobile md:px-xl flex flex-col md:flex-row justify-between items-center gap-md max-w-container-max mx-auto">
+<div class="font-headline-sm text-headline-sm text-on-primary">AgriConnect</div>
+<nav class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+<a class="text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer transition-all" href="#">About Us</a>
+<a class="text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer transition-all" href="#">Farmer Resources</a>
+<a class="text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer transition-all" href="#">Market Insight</a>
+<a class="text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer transition-all" href="#">Support Center</a>
+<a class="text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer transition-all" href="#">Privacy Policy</a>
+<a class="text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer transition-all" href="#">Contact</a>
+</nav>
+<div class="text-on-primary dark:text-on-primary-container opacity-80 text-center md:text-right text-sm">
+                © 2024 AgriConnect. Empowering sustainable agriculture.
+            </div>
+</div>
+</footer>
+</body>
+</html>
+
+#logisticroutetracking
+
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgriConnect - Logistics Support &amp; Route Optimization</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-primary": "#a5d0b9",
+                      "on-primary-container": "#86af99",
+                      "on-secondary-container": "#367200",
+                      "secondary": "#326b00",
+                      "on-secondary-fixed-variant": "#245100",
+                      "on-primary-fixed": "#002114",
+                      "on-primary-fixed-variant": "#274e3d",
+                      "primary-fixed-dim": "#a5d0b9",
+                      "surface-container": "#ececff",
+                      "tertiary-container": "#003f63",
+                      "surface-tint": "#3f6653",
+                      "outline": "#717973",
+                      "on-error-container": "#93000a",
+                      "secondary-fixed-dim": "#70e000",
+                      "inverse-on-surface": "#f0efff",
+                      "on-background": "#161a32",
+                      "on-tertiary-fixed-variant": "#004b74",
+                      "surface-dim": "#d5d8f9",
+                      "primary-fixed": "#c1ecd4",
+                      "on-secondary": "#ffffff",
+                      "on-surface-variant": "#414844",
+                      "error": "#ba1a1a",
+                      "tertiary": "#002842",
+                      "on-tertiary-fixed": "#001d32",
+                      "on-tertiary": "#ffffff",
+                      "surface-bright": "#fbf8ff",
+                      "surface-container-highest": "#dee0ff",
+                      "primary": "#012d1d",
+                      "surface-container-high": "#e5e6ff",
+                      "primary-container": "#1b4332",
+                      "on-surface": "#161a32",
+                      "tertiary-fixed": "#cde5ff",
+                      "inverse-surface": "#2b2f48",
+                      "tertiary-fixed-dim": "#94ccff",
+                      "secondary-fixed": "#8bfe32",
+                      "on-tertiary-container": "#59adef",
+                      "on-primary": "#ffffff",
+                      "surface": "#fbf8ff",
+                      "background": "#fbf8ff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-error": "#ffffff",
+                      "outline-variant": "#c1c8c2",
+                      "surface-variant": "#dee0ff",
+                      "surface-container-low": "#f4f2ff",
+                      "secondary-container": "#8bfe32",
+                      "on-secondary-fixed": "#0b2000",
+                      "error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "md": "24px",
+                      "container-max": "1280px",
+                      "sm": "12px",
+                      "lg": "48px",
+                      "margin-mobile": "16px",
+                      "xs": "4px",
+                      "base": "8px",
+                      "gutter": "24px",
+                      "xl": "80px"
+              },
+              "fontFamily": {
+                      "label-md": ["Inter"],
+                      "body-sm": ["Inter"],
+                      "headline-sm": ["Montserrat"],
+                      "headline-lg-mobile": ["Montserrat"],
+                      "headline-lg": ["Montserrat"],
+                      "body-lg": ["Inter"],
+                      "body-md": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "headline-md": ["Montserrat"]
+              },
+              "fontSize": {
+                      "label-md": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                      "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "headline-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .custom-shadow { box-shadow: 0px 4px 12px rgba(27, 67, 50, 0.08); }
+        .hover-shadow:hover { box-shadow: 0px 12px 32px rgba(27, 67, 50, 0.12); }
+      </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col">
+<header class="bg-surface dark:bg-surface-container-high border-b border-outline-variant dark:border-outline shadow-sm w-full top-0 z-50 sticky hidden md:flex">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-xl py-sm max-w-container-max mx-auto">
+<div class="flex items-center gap-md">
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary">AgriConnect</span>
+<nav class="hidden md:flex gap-md ml-lg">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Marketplace</a>
+<a class="font-body-md text-body-md text-primary dark:text-secondary-fixed border-b-2 border-primary dark:border-secondary-fixed pb-1 hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Logistics</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Forecasts</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-secondary-fixed transition-colors" href="#">Profile</a>
+</nav>
+</div>
+<div class="flex items-center gap-sm">
+<div class="relative hidden lg:block mr-md">
+<span class="material-symbols-outlined absolute left-3 top-1/2 transform -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border border-outline-variant rounded-full text-body-sm focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-all w-64" placeholder="Search logistics..." type="text"/>
+</div>
+<button class="p-2 text-primary dark:text-primary-fixed-dim hover:text-primary dark:hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100 hover:scale-95">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-2 text-primary dark:text-primary-fixed-dim hover:text-primary dark:hover:text-secondary-fixed transition-colors opacity-80 hover:opacity-100 hover:scale-95">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<img alt="Farmer profile avatar" class="w-10 h-10 rounded-full ml-sm object-cover border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZSlSeWasBduNNQWZgrywtheaLIy75D5HmssVeU5a9uimK0CmJZ-KZtSD5W2p3-9yNkyHeGpr8rG8C4lsTkUNeIA-9uEL7vVbkBUJkrxMW4ASma-XiRwYxs-F7AtH4J4U2rUicHlyyCiE-v6tKVfhTn2aiVDYZr_OS46IK1WZKKkPTv2p4iyp_uFiJbrsswe3cyOzC7e2YrAh0Xow3TZ17yH023JEEBCwGtpvZOR5Wz3tslJsW0_VuLA"/>
+</div>
+</div>
+</header>
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-xl py-lg flex flex-col lg:flex-row gap-gutter">
+<div class="w-full lg:w-5/12 flex flex-col gap-md">
+<div class="flex justify-between items-end mb-sm">
+<div>
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-xs">Logistics</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Real-time tracking &amp; route optimization.</p>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-4 py-3 rounded-lg flex items-center gap-2 hover:bg-primary-container transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add_box</span> Request Pick-up
+                </button>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-md custom-shadow hover-shadow transition-shadow relative overflow-hidden">
+<div class="absolute -right-10 -top-10 w-32 h-32 bg-secondary opacity-10 rounded-full blur-2xl"></div>
+<div class="flex items-center gap-3 mb-4">
+<div class="bg-primary text-on-primary p-2 rounded-lg">
+<span class="material-symbols-outlined">route</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary">AI Route Optimization</h2>
+<span class="ml-auto bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-1 rounded-md">Active</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-4 rounded-lg border border-outline-variant">
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Distance Saved</p>
+<p class="font-headline-md text-headline-md text-secondary">142 mi</p>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px]">trending_down</span> -12% this week
+                        </p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg border border-outline-variant">
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Est. Time Saved</p>
+<p class="font-headline-md text-headline-md text-primary">3h 15m</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span> Across 4 fleets
+                        </p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl flex flex-col h-full custom-shadow">
+<div class="p-md border-b border-outline-variant flex justify-between items-center">
+<h2 class="font-headline-sm text-headline-sm text-primary">Active Shipments</h2>
+<button class="text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+</div>
+<div class="overflow-y-auto max-h-[400px] lg:max-h-none lg:flex-grow p-4 flex flex-col gap-4">
+<div class="border border-outline-variant rounded-lg p-4 hover:border-secondary transition-colors cursor-pointer group">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-label-md text-label-md text-primary">Order #AC-8924</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Organic Soybeans - 2.5 Tons</p>
+</div>
+<span class="bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm px-2 py-1 rounded-md">In Transit</span>
+</div>
+<div class="mt-4">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-2">
+<span>Farm A</span>
+<span>Processing Plant</span>
+</div>
+<div class="w-full h-2 bg-surface-variant rounded-full overflow-hidden flex">
+<div class="bg-tertiary-container h-full w-1/2 rounded-full relative">
+<div class="absolute right-0 top-0 bottom-0 w-2 bg-white opacity-50"></div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary-container mt-2 text-right">ETA: 45 mins</p>
+</div>
+</div>
+<div class="border border-outline-variant rounded-lg p-4 hover:border-secondary transition-colors cursor-pointer group">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-label-md text-label-md text-primary">Order #AC-8927</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Winter Wheat - 5 Tons</p>
+</div>
+<span class="bg-surface-variant text-on-surface font-label-sm text-label-sm px-2 py-1 rounded-md">Processing</span>
+</div>
+<div class="mt-4">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mb-2">
+<span>Co-op Silo</span>
+<span>Mill Facility B</span>
+</div>
+<div class="w-full h-2 bg-surface-variant rounded-full overflow-hidden flex">
+<div class="bg-outline h-full w-1/4 rounded-full"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 text-right">Awaiting loading</p>
+</div>
+</div>
+<div class="border border-outline-variant rounded-lg p-4 opacity-70 hover:opacity-100 transition-opacity">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h3 class="font-label-md text-label-md text-primary">Order #AC-8910</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Corn Seed - 1 Ton</p>
+</div>
+<span class="bg-secondary text-on-secondary font-label-sm text-label-sm px-2 py-1 rounded-md">Delivered</span>
+</div>
+<div class="mt-4">
+<div class="w-full h-2 bg-secondary rounded-full overflow-hidden flex"></div>
+<p class="font-body-sm text-body-sm text-secondary mt-2 text-right">Completed at 08:30 AM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-7/12 h-[500px] lg:h-auto min-h-[600px] bg-surface-container-low border border-outline-variant rounded-xl overflow-hidden relative custom-shadow flex flex-col">
+<div class="absolute top-4 left-4 right-4 z-10 flex justify-between items-start pointer-events-none">
+<div class="bg-surface-container-lowest/90 backdrop-blur-sm border border-outline-variant p-3 rounded-lg shadow-sm pointer-events-auto">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Active Fleets</p>
+<p class="font-headline-md text-headline-md text-primary flex items-center gap-2">
+                        12 <span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+</p>
+</div>
+<div class="flex flex-col gap-2 pointer-events-auto">
+<button class="bg-surface-container-lowest p-2 rounded-lg border border-outline-variant shadow-sm text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+<button class="bg-surface-container-lowest p-2 rounded-lg border border-outline-variant shadow-sm text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">layers</span>
+</button>
+</div>
+</div>
+<div class="w-full h-full relative">
+<img alt="Map View" class="absolute inset-0 w-full h-full object-cover opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUgAw9JbCh7h0g5zIEERWJbd3eUXvv5ww65iTDSOed8EpajHANsXKGopDAYkTMXZ22XeYCvbvIcQUpMzDsS9P91RdKivZgLd1cDMPREib7gn-C3d64awbkhomc2SSCY-rajPNu8hQLlJVQ7Ulw_5JjBJpSSt9x08iDU3uPTJ1V-sjNODIxZy19B1zLoqs3kHG3TfUi6HiWjEOuIg33l3g7rtJpMIvmn7-1xQEZo3e6TSXGTm5ZETU7LA"/>
+<svg class="absolute inset-0 w-full h-full" preserveaspectratio="none" viewbox="0 0 100 100">
+<path class="opacity-60" d="M 20 80 Q 40 60 50 40 T 80 20" fill="none" stroke="#003f63" stroke-dasharray="2 1" stroke-width="0.5"></path>
+<circle cx="20" cy="80" fill="#1b4332" r="1.5"></circle>
+<circle cx="80" cy="20" fill="#003f63" r="1.5"></circle>
+<circle cx="50" cy="40" fill="#8bfe32" r="2">
+<animate attributename="cx" dur="10s" repeatcount="indefinite" values="20;80"></animate>
+<animate attributename="cy" dur="10s" repeatcount="indefinite" values="80;20"></animate>
+</circle>
+</svg>
+</div>
+<div class="absolute bottom-4 left-4 right-4 bg-surface-container-lowest/95 backdrop-blur-md border border-outline-variant rounded-xl p-4 shadow-lg">
+<div class="flex items-center justify-between mb-2">
+<h4 class="font-label-md text-label-md text-primary">Selected Vehicle: Unit 04</h4>
+<span class="font-label-sm text-label-sm text-tertiary-container bg-tertiary-fixed/30 px-2 py-1 rounded">In Transit</span>
+</div>
+<div class="flex justify-between text-body-sm font-body-sm text-on-surface-variant">
+<div>
+<p class="mb-1"><span class="font-medium text-on-surface">Destination:</span> Processing Plant A</p>
+<p><span class="font-medium text-on-surface">Speed:</span> 55 mph</p>
+</div>
+<div class="text-right">
+<p class="mb-1"><span class="font-medium text-on-surface">ETA:</span> 45 mins</p>
+<button class="text-secondary hover:underline font-label-sm">Contact Driver</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-primary dark:bg-primary-container w-full py-lg px-margin-mobile md:px-xl flex flex-col md:flex-row justify-between items-center gap-md mt-auto">
+<div class="flex flex-col items-center md:items-start">
+<span class="font-headline-sm text-headline-sm text-on-primary mb-2">AgriConnect</span>
+<p class="font-body-sm text-body-sm text-on-primary dark:text-on-primary-container opacity-80">© 2024 AgriConnect. Empowering sustainable agriculture.</p>
+</div>
+<nav class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2">
+<a class="font-body-sm text-body-sm text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer transition-colors" href="#">About Us</a>
+<a class="font-body-sm text-body-sm text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer transition-colors" href="#">Farmer Resources</a>
+<a class="font-body-sm text-body-sm text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer transition-colors" href="#">Market Insight</a>
+<a class="font-body-sm text-body-sm text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer transition-colors" href="#">Support Center</a>
+<a class="font-body-sm text-body-sm text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-primary dark:text-on-primary-container opacity-80 hover:opacity-100 hover:text-secondary-fixed cursor-pointer transition-colors" href="#">Contact</a>
+</nav>
+</footer>
+</body>
+</html>
